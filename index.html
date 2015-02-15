@@ -8,25 +8,34 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="logo.png">
+    <header class="row">
+      <div class="small-12 medium-3 large-4 columns logo">
+       <img src="logo.png">
       </div>
-      <nav>
-        <ul>
-          <li>reserve a table</li>
-          <li>order online</li>
-        </ul>
-      </nav>
-      <nav>
-        <ul>
-          <li>menu</li>
-          <li>contact</li>
-          <li>events</li>
-          <li>homerunner</li>
-        </ul>
+      <nav class="small-12 medium-9 large-8 columns">
+        <div class="row">
+          <div class="small-12 columns">
+            <ul>
+              <li>reserve a table</li>
+              <li>order online</li>
+            </ul>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 columns">
+            <ul>
+              <li>menu</li>
+              <li>contact</li>
+              <li>events</li>
+              <li>homerunner</li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
+<!--end ender-->
+<!--start slider-->
     <div class="slider">
       <ul>
         <li><img src=""></li>
@@ -34,6 +43,7 @@
         <li><img src""></li>
       </ul>
     </div>
+
     <aside>
     <!---Twitter feed here -->
     </aside>
@@ -41,17 +51,23 @@
     <!--Events section-->
 
     <section class="events">
-      <h1>Upcoming Events</h1>
       <div class="row">
-        <div class"events events-1">
-        </div>
-        <div class="events events-2">
-        </div>
-        <div class="events events-3">
+        <div class="small-12 columns">
+          <h1>Upcoming Events</h1>
         </div>
       </div>
       <div class="row">
-        <button><a href="/events.html">View All Events</a></button>
+        <div class"small-12 medium-3 columns events events-1">
+        </div>
+        <div class="small-12 medium-3 columns events events-2">
+        </div>
+        <div class="small-12 medium-3 columns events events-3">
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 columns">
+          <button><a href="/events.html">View All Events</a></button>
+        </div>
       </div>
     </section>
   <!--end events section-->
@@ -64,12 +80,16 @@
 
   <!--About us section -->
     <section class="about-us">
-      <h1>About Us</h1>
       <div class="row">
-        <div class="about-us-photo">
+        <div class="small-12 columns">
+          <h1>About Us</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-6 columns about-us-photo">
           <img src="">
         </div>
-        <div class="about-us-description">
+        <div class="small-12 medium-6 columns about-us-description">
           <h2>Our Story</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at voluptatum sapiente impedit vitae recusandae ad atque minus aliquam consequuntur hic quis ipsam officiis itaque, nostrum, odit libero eum nobis.</p>
           <h2>Opening Hours</h2>
@@ -87,33 +107,43 @@
 
   <!--Start subscribe section -->
     <section class="subscribe">
-      <h1>Get your game on</h1>
       <div class="row">
-        <div class="subscribe-reserve">
+        <div class="small-12 columns">
+         <h1>Get your game on</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-6 columns subscribe-reserve">
           <h2>Get your front row seats</h2>
           <!--insert opentable plugin-->
         </div>
-        <div class="subscribe-subscribe">
-          <h2>Don't miss a play</h2>
-          <form>
-            <input type="email" name="email" required>
-            <button type="submit">Get the newsletter</button>
-          </form>
-        </div>
-        <div class="social">
-          <ul>
-            <li><a href=""><img src="images/facebook.png"></a></li>
-            <li><a href=""><img src="iamges/twitter.png"></a></li>
-            <li><a href=""><img src="images/instagram.png"></a></li>
-          </ul>
+        <div class="small-12 medium-6 columns subscribe-subscribe">
+          <div class="row">
+            <div class="small-12 columns">
+              <h2>Don't miss a play</h2>
+              <form>
+                <input type="email" name="email" required>
+                <button type="submit">Get the newsletter</button>
+              </form>
+            </div>
+          </div>
+          <div class="social">
+            <ul>
+              <li><a href=""><img src="images/facebook.png"></a></li>
+              <li><a href=""><img src="iamges/twitter.png"></a></li>
+              <li><a href=""><img src="images/instagram.png"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
   <!--End subscribe section-->
 
   <!--Start footer-->
-    <footer>
-    copyright 2015 lindsey maratta <a href="">privacy</a>//<a href="">terms</a>//<a href="">legal</a>
+    <footer class="row">
+      <div class="small-12 columns">
+        copyright 2015 lindsey maratta <a href="">privacy</a>//<a href="">terms</a>//<a href="">legal</a>
+      </div>
     </footer>
   <!--End footer-->
     
