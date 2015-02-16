@@ -1,8 +1,10 @@
 /*
 Text
+Buttons
 Header
 	Navigation
 Slider
+Evennts
 Fixed Background
 	1
 	2
@@ -16,40 +18,149 @@ Footer
 /* Text
 =============================================================*/
 
+body {
+font-family: Roboto, helvetica, sans-serif;
+text-align: center;
+}
+
+
 h1 {
 	text-align: center;
-	font-family: Roboto, helvetica, sans-serif;
-	font-weight: black;
+	font-weight: 800;
+	font-size: 36px;
 	text-transform: uppercase;
 }
 
 h2 {
 	text-align: center;
-	font-family: Roboto, helvetica, sans-serif;
+	color: #FFAA4C;
+	font-size: 20px;
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
+/* Buttons and images 
+=============================================================*/
+
+button {
+	background: #FF3A1D;
+	width: 220px;
+	border-radius: 5px;
+	color: white;
+	font-weight: 200;
+	font-size: 14px;
+	text-transform: uppercase;
+	box-shadow: 2px 2px 0 0;
+	webkit-box-shadow: 2px 2px 0 0;
+
+}
+button:hover {
+	background: #C5301A;
+}
+
+.rounded {
+	border-radius: 5px;
+	border: 3px gray solid, 2px white solid;
+}
 
 /* Header
 =============================================================*/
+header {
+	background: #373935;
+	color: white;
+	text-align: right;
+
+}
 
 
 /* Navigation 
 =============================================================*/
+header nav li {
+	display: inline-block;
+	padding: 10px 0 10px 40px;
+}
 
 
 /* Slider 
 =============================================================*/
+.slider {
+	min-height: 600px;
+	background: url('../img/champagne.jpg');
+	background-size: cover;
+}
 
+
+/* Twitter feed 
+=============================================================*/
+.twitter-feed {
+	background: #FF3A1D;
+	height:100px;
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+
+/* Events
+=============================================================*/
+.events {
+	margin:20px;
+
+}
+
+.events-1 {
+	width:290px;
+	height: 275px;
+	background: url('../img/footballplayer.jpg');
+	background-size: cover;
+	position: relative;
+}
+.events-2 {
+	width:290px;
+	height: 275px;
+	background: url('../img/basketball.jpg');
+	background-size: cover;
+}
+.events-3{
+		width:290px;
+		height: 275px;
+		background: url('../img/champagne.jpg');
+		background-size: cover;
+
+}
+
+.description {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 30%;
+	width: 100%;
+	text-align: right;
+	padding: 5px;
+	background: rgba(255, 170, 76, .8);
+
+}
 
 
 /* Fixed Background 
 =============================================================*/
-
+	
+.fixed-background-1 {
+	min-height: 600px;
+	background: url('../img/interior.jpg') bottom center fixed;
+	background-size: cover;
+}
+.fixed-background-2 {
+	min-height: 600px;
+	background: url('../img/pizza.jpg') bottom center fixed;
+	background-size: cover;
+}
 
 
 /* About Us 
 =============================================================*/
+.about-us p, h2 {
+	text-align: left;
+}
 
 
 /* Subscribe 
@@ -62,4 +173,6 @@ h2 {
 
 /*Footer
 =============================================================*/
-
+footer {
+	background: #D8D8D8;
+}
