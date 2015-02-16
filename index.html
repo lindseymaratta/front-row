@@ -9,31 +9,33 @@
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-    <header class="row">
-      <div class="small-12 medium-3 large-4 columns logo">
-       <img src="logo.png">
+    <header>
+      <div class="row">
+        <div class="small-12 medium-3 large-4 columns logo">
+         <img src="logo.png">
+        </div>
+        <nav class="small-12 medium-9 large-8 columns">
+          <div class="row">
+            <div class="small-12 columns">
+              <ul>
+                <li>reserve a table</li>
+                <li>order online</li>
+              </ul>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <ul>
+                <li>menu</li>
+                <li>contact</li>
+                <li>events</li>
+                <li>homerunner</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-      <nav class="small-12 medium-9 large-8 columns">
-        <div class="row">
-          <div class="small-12 columns">
-            <ul>
-              <li>reserve a table</li>
-              <li>order online</li>
-            </ul>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="small-12 columns">
-            <ul>
-              <li>menu</li>
-              <li>contact</li>
-              <li>events</li>
-              <li>homerunner</li>
-            </ul>
-          </div>
-        </div>
-      </nav>
     </header>
 <!--end ender-->
 <!--start slider-->
@@ -45,7 +47,12 @@
       </ul>
     </div>
 
-    <aside>
+    <aside class="twitter-feed">
+      <div class="row">
+        <div class="small-12 columns">
+          Twitter feed here
+        </div>
+      </div>
     <!---Twitter feed here -->
     </aside>
 
@@ -58,16 +65,31 @@
         </div>
       </div>
       <div class="row">
-        <div class"small-12 medium-3 columns events events-1">
+        <div class="small-12 medium-3 columns events events-1 rounded">
+          <div class="description">
+            sports<br>
+            Seahawks vs. Patriots // Fri. Feb 1st<br>
+            8:00pm - 10:00pm
+          </div>
         </div>
-        <div class="small-12 medium-3 columns events events-2">
+        <div class="small-12 medium-3 columns events events-2 rounded">
+           <div class="description">
+            sports<br>
+            Celtics vs. Knicks // Fri. Feb 8th<br>
+            7:00pm - 9:00pm
+          </div>
         </div>
-        <div class="small-12 medium-3 columns events events-3">
+        <div class="small-12 medium-3 columns events events-3 rounded">
+           <div class="description">
+            food & bev<br>
+            Front Row Brunch // Sunday Feb 1st<br>
+            12:00pm - 4:00pm
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="small-12 columns">
-          <button><a href="/events.html">View All Events</a></button>
+          <a href="/events.html"><button>View All Events</button></a>
         </div>
       </div>
     </section>
@@ -88,7 +110,7 @@
       </div>
       <div class="row">
         <div class="small-12 medium-6 columns about-us-photo">
-          <img src="">
+          <img src="img/bar.jpg" class="rounded">
         </div>
         <div class="small-12 medium-6 columns about-us-description">
           <h2>Our Story</h2>
@@ -117,6 +139,7 @@
         <div class="small-12 medium-6 columns subscribe-reserve">
           <h2>Get your front row seats</h2>
           <!--insert opentable plugin-->
+          <a href=""><button>Book table</button></a>
         </div>
         <div class="small-12 medium-6 columns subscribe-subscribe">
           <div class="row">
@@ -141,9 +164,11 @@
   <!--End subscribe section-->
 
   <!--Start footer-->
-    <footer class="row">
-      <div class="small-12 columns">
-        copyright 2015 lindsey maratta <a href="">privacy</a>//<a href="">terms</a>//<a href="">legal</a>
+    <footer>
+      <div class="row">
+        <div class="small-12 columns">
+          copyright 2015 lindsey maratta <a href="">privacy</a>//<a href="">terms</a>//<a href="">legal</a>
+        </div>
       </div>
     </footer>
   <!--End footer-->
