@@ -6,8 +6,18 @@
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/overrides.css" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!--  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" /> -->
+    <!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css" />
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css" />
+ 
+ <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/modernizr.js"></script>
+ 
+<!-- Include js plugin -->
+
   </head>
   <body>
     <header>
@@ -40,18 +50,21 @@
     </header>
 <!--end ender-->
 <!--start slider-->
-    <div class="slider">
-      <div class="row no-margin">
-        <ul>
-          <li><img src="">
-              <h1>Get Your Brunch On</h1>
-              <p>Join us every Saturday for all you can eat,  all you can drink, while you watch the game.</p>
-          </li>
-          <li><img src=""></li>
-          <li><img src""></li>
-        </ul>
-      </div>
+<div id="owl-example" class="owl-carousel">
+  <div class="slider">
+    <img src="img/champagne.jpg">
+    <div class="slider-text">
+      <h1>Get Your Brunch On</h1>
+      <p>Join us every Saturday for all you can eat,  all you can drink, while you watch the game.</p>
     </div>
+  </div>
+  <div><img src="img/pizza.jpg"></div>
+  <div> Your Content 3</div>
+  <div> Your Content 4</div>
+
+
+</div>
+  
     <div class="twitter-feed">
       <div class="row no-margin">
         <div class="small-12 columns">
@@ -187,11 +200,20 @@
       </div>
     </footer>
   <!--End footer-->
-    
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="owl-carousel/owl.carousel.js"></script>
+    <script> 
+   $(document).ready(function() {
+ 
+  $("#owl-example").owlCarousel(
+    );
+ 
+});
+   </script>
     <script>
       $(document).foundation();
     </script>
+      
   </body>
 </html>
