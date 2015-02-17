@@ -95,20 +95,37 @@ header nav a:hover {
 
 /* Slider 
 =============================================================*/
-.slider {
+/*.slider {
 	min-height: 600px;
 	background: url('../img/champagne.jpg');
 	background-size: cover;
-}
+}*/
 
-.slider li {
+.slider {
 	position: relative;
-	display: flex;
+}
+.owl-carousel {
+	background: #373935;
+}
+.slider-text {
+	width:90%;
+	top:30%;
+	left:5%;
+	position: absolute;
+	color: white;
 }
 
-.slider h1, .slider p {
-	position: absolute;
-	margin: auto;
+.slider-text h1 {
+	font-family: Cookie, cursive;
+	color: orange;
+	text-transform: none;
+	font-size: 62px;
+	text-shadow: 2px 2px 2px #000000;
+}
+.slider-text p {
+	text-shadow: 2px 2px 2px #000000;
+	font-size: 150%;
+	font-family: Roboto, helvetica, sans-serif;
 }
 
 
@@ -128,7 +145,7 @@ header nav a:hover {
 /* Events
 =============================================================*/
 .events {
-	border: 2px red solid;
+	padding: 100px 0;
 	text-align: center;
 }
 
@@ -181,6 +198,7 @@ header nav a:hover {
 	
 .fixed-background-1 {
 	min-height: 600px;
+	height: 100vh;
 	background: url('../img/interior.jpg') bottom center fixed;
 	background-size: cover;
 }
