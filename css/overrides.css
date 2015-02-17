@@ -50,8 +50,10 @@ button {
 	font-weight: 200;
 	font-size: 14px;
 	text-transform: uppercase;
-	box-shadow: 2px 2px 0 0;
-	webkit-box-shadow: 2px 2px 0 0;
+	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 
 }
 button:hover {
@@ -72,7 +74,10 @@ header {
 
 }
 
+.logo img{
+	padding:20px;
 
+}
 /* Navigation 
 =============================================================*/
 header nav li {
@@ -80,6 +85,13 @@ header nav li {
 	padding: 10px 0 10px 40px;
 }
 
+header nav a {
+	color: white;
+}
+
+header nav a:hover {
+	color: #C5301A;
+}
 
 /* Slider 
 =============================================================*/
@@ -87,6 +99,16 @@ header nav li {
 	min-height: 600px;
 	background: url('../img/champagne.jpg');
 	background-size: cover;
+}
+
+.slider li {
+	position: relative;
+	display: flex;
+}
+
+.slider h1, .slider p {
+	position: absolute;
+	margin: auto;
 }
 
 
@@ -100,31 +122,44 @@ header nav li {
 	margin: 0;
 }
 
+.no-margin {
+	margin: 0;
+}
 /* Events
 =============================================================*/
 .events {
-	margin:20px;
-
+	border: 2px red solid;
+	text-align: center;
 }
 
+.events-container {
+	padding: 5px;
+}
 .events-1 {
-	width:290px;
 	height: 275px;
 	background: url('../img/footballplayer.jpg');
 	background-size: cover;
 	position: relative;
+	overflow: hidden;
 }
+
+
 .events-2 {
-	width:290px;
+
 	height: 275px;
 	background: url('../img/basketball.jpg');
 	background-size: cover;
+	position: relative;
+	overflow: hidden;
+
 }
 .events-3{
-		width:290px;
+
 		height: 275px;
 		background: url('../img/champagne.jpg');
 		background-size: cover;
+		position: relative;
+		overflow: hidden;
 
 }
 
@@ -163,16 +198,49 @@ header nav li {
 }
 
 
+.about-us {
+	padding: 100px 0;
+}
+
+
+
 /* Subscribe 
 =============================================================*/
+.subscribe {
+	text-align: center;
+	padding: 100px 0;
+
+}
+
+.subscribe h2 {
+	text-align: center;
+}
+
+.subscribe input {
+	width: 80%;
+	padding: 10px;
+	display: inline-block;
+}
 
 
 	/* Social
 	=============================================================*/
-
+.fa {
+	color: red;
+}
+.social li{
+	float: left;
+	text-decoration: none;
+	list-style-type: none;
+}
 
 /*Footer
 =============================================================*/
 footer {
 	background: #D8D8D8;
+	color: white;
+	text-align: left;
+}
+footer a{
+	color:white;
 }
