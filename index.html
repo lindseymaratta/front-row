@@ -6,20 +6,21 @@
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/overrides.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
     <header>
       <div class="row">
         <div class="small-12 medium-3 large-4 columns logo">
-         <img src="logo.png">
+         <img src="img/logo.png">
         </div>
         <nav class="small-12 medium-9 large-8 columns">
           <div class="row">
             <div class="small-12 columns">
               <ul>
-                <li>reserve a table</li>
-                <li>order online</li>
+                <li><a href="#">reserve a table</a></li>
+                <li><a href="#">order online</a></li>
               </ul>
               <hr>
             </div>
@@ -27,10 +28,10 @@
           <div class="row">
             <div class="small-12 columns">
               <ul>
-                <li>menu</li>
-                <li>contact</li>
-                <li>events</li>
-                <li>homerunner</li>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">events</a></li>
+                <li><a href="#">homerunner</a></li>
               </ul>
             </div>
           </div>
@@ -40,21 +41,25 @@
 <!--end ender-->
 <!--start slider-->
     <div class="slider">
-      <ul>
-        <li><img src=""></li>
-        <li><img src=""></li>
-        <li><img src""></li>
-      </ul>
+      <div class="row no-margin">
+        <ul>
+          <li><img src="">
+              <h1>Get Your Brunch On</h1>
+              <p>Join us every Saturday for all you can eat,  all you can drink, while you watch the game.</p>
+          </li>
+          <li><img src=""></li>
+          <li><img src""></li>
+        </ul>
+      </div>
     </div>
-
-    <aside class="twitter-feed">
-      <div class="row">
+    <div class="twitter-feed">
+      <div class="row no-margin">
         <div class="small-12 columns">
           Twitter feed here
         </div>
       </div>
+    </div>
     <!---Twitter feed here -->
-    </aside>
 
     <!--Events section-->
 
@@ -65,27 +70,33 @@
         </div>
       </div>
       <div class="row">
-        <div class="small-12 medium-3 columns events events-1 rounded">
+      <div class="small-12 medium-4 columns events-container">
+        <div class="events-1 rounded">
           <div class="description">
             sports<br>
-            Seahawks vs. Patriots // Fri. Feb 1st<br>
-            8:00pm - 10:00pm
+            Seahawks vs. Patriots<br>
+            Fri. Feb 1st // 8 - 10pm<br>
           </div>
         </div>
-        <div class="small-12 medium-3 columns events events-2 rounded">
+        </div>
+        <div class="small-12 medium-4 columns events-container">
+        <div class="events-2 rounded">
            <div class="description">
             sports<br>
-            Celtics vs. Knicks // Fri. Feb 8th<br>
-            7:00pm - 9:00pm
+            Celtics vs. Knicks<br>
+            Fri. Feb 8th // 7 - 9pm<br>
           </div>
         </div>
-        <div class="small-12 medium-3 columns events events-3 rounded">
+        </div>
+        <div class="small-12 medium-4 columns events-container">
+        <div class="events-3 rounded">
            <div class="description">
             food & bev<br>
-            Front Row Brunch // Sunday Feb 1st<br>
-            12:00pm - 4:00pm
+            Front Row Brunch<br>
+            Sun. Feb 1st // 12 -4 pm<br>
           </div>
         </div>
+      </div>
       </div>
       <div class="row">
         <div class="small-12 columns">
@@ -138,8 +149,12 @@
       <div class="row">
         <div class="small-12 medium-6 columns subscribe-reserve">
           <h2>Get your front row seats</h2>
-          <!--insert opentable plugin-->
-          <a href=""><button>Book table</button></a>
+          <form>
+            <input type="number" name="guests" placeholder="number in party">
+            <input type="date" name="date">
+            <input type="time" name="date" value="19:00">
+          <a href="" type="submit" name="book"><button>Book table</button></a>
+          </form>
         </div>
         <div class="small-12 medium-6 columns subscribe-subscribe">
           <div class="row">
@@ -153,9 +168,9 @@
           </div>
           <div class="social">
             <ul>
-              <li><a href=""><img src="images/facebook.png"></a></li>
-              <li><a href=""><img src="iamges/twitter.png"></a></li>
-              <li><a href=""><img src="images/instagram.png"></a></li>
+              <li><a href=""><i class="fa fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa fa-instagram"></i></a></li>
             </ul>
           </div>
         </div>
