@@ -4,7 +4,7 @@ Buttons
 Header
 	Navigation
 Slider
-Evennts
+Events
 Fixed Background
 	1
 	2
@@ -12,6 +12,7 @@ About Us
 Subscribe
 	Social
 Footer
+Media Queries
 */
 
 
@@ -37,6 +38,13 @@ h2 {
 	font-size: 20px;
 	font-weight: 600;
 	text-transform: uppercase;
+}
+
+.body {
+	text-align: left;
+}
+.body a{
+	color: gray;
 }
 
 /* Buttons and images 
@@ -73,23 +81,40 @@ header {
 	text-align: right;
 
 }
+.logo {
+	text-align: center;
 
+}
 .logo img{
-	padding:20px;
+	padding: 10px 0 10px 0;
+
 
 }
 /* Navigation 
 =============================================================*/
+header nav{
+	padding: 5px 0 25px 0;
+}
 header nav li {
 	display: inline-block;
-	padding: 10px 0 10px 40px;
+	padding: 10px 0 10px 30px;
 }
 
 header nav a {
 	color: white;
 }
 
-header nav a:hover {
+nav ul {
+	margin: auto 10px;
+}
+a{
+	color: white;
+-webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
+-moz-tranisition: color .5s;
+-o-transition: color .5s;
+    transition: color .5s;
+  }
+a:hover {
 	color: #C5301A;
 }
 
@@ -128,6 +153,33 @@ header nav a:hover {
 	font-family: Roboto, helvetica, sans-serif;
 }
 
+.masthead {
+	width: 100%;
+	margin: 0 0 25px 0;
+	background-size: cover;
+	min-height: 300px;
+	height:20vh;
+
+}
+
+.masthead-contact {
+	background:url("../img/bar.jpg") bottom center fixed;
+}
+.masthead-homerunner {
+	background:url("../img/needaride.jpg") bottom center fixed;
+}
+.masthead-events {
+	background:url("../img/patio.jpg") bottom center fixed;
+}
+.masthead-order {
+	background:url("../img/salad.jpg") bottom center fixed;
+}
+.masthead-menu {
+	background:url("../img/cocktails.jpg") bottom center fixed;
+}
+.masthead-reserve {
+	background:url("../img/football.jpg") bottom center fixed;
+}
 
 /* Twitter feed 
 =============================================================*/
@@ -258,7 +310,28 @@ footer {
 	background: #D8D8D8;
 	color: white;
 	text-align: left;
+	margin-top:25px;
 }
 footer a{
 	color:white;
+}
+
+/*Footer
+=============================================================*/
+
+@media (max-width: 640px) {
+	
+header nav li {
+		display: inline-block;
+		width: 100%;
+		border: 1px solid red;
+		border-radius: 5px;
+		text-align: center;
+		padding: 10px 0;
+		margin: 2px;
+		background: rgba(255,255,255, .1);
+		font-size: 120%;
+
+	}
+
 }
