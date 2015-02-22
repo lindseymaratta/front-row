@@ -185,12 +185,14 @@ a:hover {
 =============================================================*/
 .twitter-feed {
 	background: #FF3A1D;
-	height:100px;
 	color: white;
 	text-align: center;
 	margin: 0;
 }
 
+#twitker-marqee {
+	
+}
 .no-margin {
 	margin: 0;
 }
