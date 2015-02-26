@@ -53,25 +53,16 @@ h2 {
 button {
 	background: #FF3A1D;
 	width: 220px;
-	border-radius: 5px;
 	color: white;
 	font-weight: 200;
 	font-size: 14px;
 	text-transform: uppercase;
-	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-	-o-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 
 }
 button:hover {
 	background: #C5301A;
 }
 
-.rounded {
-	border-radius: 5px;
-	border: 3px gray solid, 2px white solid;
-}
 
 /* Header
 =============================================================*/
@@ -97,7 +88,7 @@ header nav{
 }
 header nav li {
 	display: inline-block;
-	padding: 10px 0 10px 30px;
+	padding: 10px 20px 10px 10px;
 }
 
 header nav a {
@@ -105,8 +96,9 @@ header nav a {
 }
 
 nav ul {
-	margin: auto 10px;
+	margin: auto 0;
 }
+
 a{
 	color: white;
 -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
@@ -117,6 +109,8 @@ a{
 a:hover {
 	color: #C5301A;
 }
+
+
 
 /* Slider 
 =============================================================*/
@@ -205,6 +199,7 @@ a:hover {
 
 .events-container {
 	padding: 5px;
+	margin-bottom: 15px;
 }
 .events-1 {
 	height: 275px;
@@ -213,7 +208,6 @@ a:hover {
 	position: relative;
 	overflow: hidden;
 }
-
 
 .events-2 {
 
@@ -245,6 +239,7 @@ a:hover {
 	background: rgba(255, 170, 76, .8);
 
 }
+
 
 
 /* Fixed Background 
@@ -298,12 +293,35 @@ a:hover {
 	/* Social
 	=============================================================*/
 .fa {
-	color: red;
+	color: #373935;
+	text-align: center;
+	margin: 20px;
+	-webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
+-moz-tranisition: color .5s;
+-o-transition: color .5s;
+    transition: color .5s;
+  
 }
+
+
+.fa:hover{
+	color: #FF3A1D;
+
+}
+
+.social ul{
+	text-align: center;
+	margin: 0;
+
+}
+
 .social li{
-	float: left;
+	color: #FF3A1D;
+	margin: 10px;
 	text-decoration: none;
 	list-style-type: none;
+	display: inline-block;
+	text-align: center;
 }
 
 /*Footer
@@ -314,11 +332,30 @@ footer {
 	text-align: left;
 	margin-top:25px;
 }
-footer a{
-	color:white;
+
+footer a {
+	color: white;
 }
 
 /*Footer
+=============================================================*/
+/* Sticky footer*/
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -2em;
+}
+.footer, .push {
+height: 2em;
+}
+/*Media Queries
 =============================================================*/
 
 @media (max-width: 640px) {
@@ -327,7 +364,6 @@ header nav li {
 		display: inline-block;
 		width: 100%;
 		border: 1px solid red;
-		border-radius: 5px;
 		text-align: center;
 		padding: 10px 0;
 		margin: 2px;
