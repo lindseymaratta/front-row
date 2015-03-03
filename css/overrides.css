@@ -70,6 +70,8 @@ header {
 	background: #373935;
 	color: white;
 	text-align: right;
+	font-weight: 600;
+	text-transform: uppercase;
 
 }
 .logo {
@@ -85,11 +87,11 @@ header {
 =============================================================*/
 header nav{
 	padding: 5px 0 25px 0;
-	margin-top: 10px;
+	margin-top: 30px;
 }
 header nav li {
 	display: inline-block;
-	padding: 0 20px 10px 10px;
+	padding: 0 17px 0 8px;
 }
 
 header nav a {
@@ -100,7 +102,7 @@ nav ul {
 	margin: auto 0;
 }
 
-a{
+a {
 	color: white;
 -webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
 -moz-tranisition: color .5s;
@@ -159,6 +161,7 @@ a:hover {
 
 .masthead-contact {
 	background:url("../img/bar.jpg") bottom center fixed;
+
 }
 .masthead-homerunner {
 	background:url("../img/needaride.jpg") bottom center fixed;
