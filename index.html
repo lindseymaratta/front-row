@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/overrides.css" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <!-- Important Owl stylesheet -->
-<link rel="stylesheet" href="owl-carousel/owl.carousel.css" />
+<link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
  
 <!-- Default Theme -->
-<link rel="stylesheet" href="owl-carousel/owl.theme.css" />
+<link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
  
  <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/modernizr.js"></script>
@@ -28,6 +28,7 @@
         <nav class="small-12 medium-8 columns">
           <div class="row">
             <ul class="small-12 columns">
+              <li class="call-out"><a href="tel:+18606455555">(860) 645 - 5555</a></li>
               <li><a href="reserve.html">reserve a table</a></li>
               <li><a href="order-online.html">order online</a></li>
               <hr>
@@ -44,80 +45,84 @@
         </nav>
       </div>
     </header>
-<!--end ender-->
-<!--start slider-->
-<section id="owl-example" class="owl-carousel">
-  <div class="slider">
-    <img src="img/pizza.jpg">
-    <div class="slider-text">
-      <h1>The Best Pizza in Town</h1>
-      <p>Come by for our famous coal-fired pies, sized to share!</p>
-    </div>
-  </div>
-   <div class="slider">
-    <img src="img/sandwich.jpg">
-    <div class="slider-text">
-      <h1>New Seasonal Menu</h1>
-      <p>Try our delicous new specialty sandwiches, available for take out or half price at happy hour!</p>
-    </div>
-  </div>
-  <div class="slider">
-    <img src="img/basketball.jpg">
-    <div class="slider-text">
-      <h1>March Madness</h1>
-      <p>Don't miss out on the college basketball mayhem. Get your front row seats!</p>
-    </div>
-  </div>
-  <div class="slider">
-    <img src="img/champagne.jpg">
-    <div class="slider-text">
-      <h1>Get Your Brunch On</h1>
-      <p>Join us every Saturday for all you can eat,  all you can drink, while you watch the game.</p>
-  </div>
-    </div>
-</section>
-  
-<section class="twitter-feed row no-margin">
-  <div class="small-12 columns" id="twitter-feed-marquee"></div>
-</section>
+    <!--end ender-->
+    <!--start slider-->
+    <section id="owl-example" class="owl-carousel">
+
+
+      <div class="slider">
+        <img src="img/pizza.jpg">
+        <div class="slider-text">
+          <h1>The Best Pizza in Town</h1>
+          <p>Come by for our famous coal-fired pies, sized to share!</p>
+        </div>
+      </div>
+       <div class="slider">
+        <img src="img/sandwich.jpg">
+        <div class="slider-text">
+          <h1>New Seasonal Menu</h1>
+          <p>Try our delicous new specialty sandwiches, available for take out or half price at happy hour!</p>
+        </div>
+      </div>
+      <div class="slider">
+        <img src="img/basketball.jpg">
+        <div class="slider-text">
+          <h1>March Madness</h1>
+          <p>Don't miss out on the college basketball mayhem. Get your front row seats!</p>
+        </div>
+      </div>
+      <div class="slider">
+        <img src="img/champagne.jpg">
+        <div class="slider-text">
+          <h1>Get Your Brunch On</h1>
+          <p>Join us every Saturday for all you can eat,  all you can drink, while you watch the game.</p>
+       </div>
+      </div>
+
+    </section>
+      
 
     <!--Events section-->
 
     <section class="events">
       <div class="row">
         <h1>Upcoming Events</h1>
-      </div>
-      <div class="row">
         <div class="small-12 medium-4 columns events-container">
           <div class="events-1">
             <div class="description">
-            sports<br>
-            Seahawks vs. Patriots<br>
-            Fri. Feb 1st // 8 - 10pm<br>
+            <ul>
+              <li>sports</li>
+              <li>Seahawks vs. Patriots</li>
+              <li>Fri. Feb 1st // 8 - 10pm</li>
+            </ul>
             </div>
           </div>
         </div>
         <div class="small-12 medium-4 columns events-container">
           <div class="events-2">
              <div class="description">
-              sports<br>
-              Celtics vs. Knicks<br>
-              Fri. Feb 8th // 7 - 9pm<br>
+              <ul>
+                <li>sports</li>
+                <li>Celtics vs. Knicks</li>
+                <li>Fri. Feb 8th // 7 - 9pm</li>
+              </ul>
             </div>
         </div>
         </div>
         <div class="small-12 medium-4 columns events-container">
           <div class="events-3">
              <div class="description">
-              food & bev<br>
-              Front Row Brunch<br>
-              Sun. Feb 1st // 12 -4 pm<br>
+              <ul>
+                <li>food & bev</li>
+                <li>Front Row Brunch</li>
+                <li>Sun. Feb 1st // 12 - 4 pm</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <a href="/events.html"><button>View All Events</button></a>
+        <a href="events.html" class="button">View All Events</a>
       </div>
     </section>
   <!--end events section-->
@@ -164,16 +169,22 @@
             <input type="number" name="guests" placeholder="number in party">
             <input type="date" name="date">
             <input type="time" name="date" value="19:00">
-          <a href="" type="submit" name="book"><button>Book table</button></a>
+
+          <a href="" type="submit" name="book" class="button button-primary">Book table</a>
           </form>
         </div>
       <div class="small-12 medium-6 columns subscribe-subscribe">
         <div class="row">
             <h2>Don't miss a play</h2>
+            <!--
             <form>
               <input type="email" name="email" placeholder="email address" required>
-              <button type="submit">Get the newsletter</button>
+              <input type="submit" value="Get the newsletter" class="button">
             </form>
+
+            -->
+            <input type="email" name="email" placeholder="email address" required>
+            <a href="#" class="button">get the newsletter</a>
         </div>
         <div class="social row">
           <ul>
@@ -187,28 +198,25 @@
   <!--End subscribe section-->
 
   <!--Start footer-->
-    <footer>
+    <footer class="footer">
       <div class="row">
-        <div class="small-12 columns">
-          copyright 2015 lindsey maratta <a href="">privacy</a>//<a href="">terms</a>//<a href="">legal</a>
-        </div>
+        <ul class="footer-list">
+          <li>copyright &copy 2015 Lindsey Maratta</li>
+          <li><a href="#">privacy</a></li>
+          <li><a href="#">terms</a></li>
+          <li><a href="#">legal</a></li>
+          </ul>
       </div>
     </footer>
   <!--End footer-->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="owl-carousel/owl.carousel.js"></script>
+    <script src="js/owl-carousel/owl.carousel.js"></script>
     <script> 
-   $(document).ready(function() {
- 
-  $("#owl-example").owlCarousel(
-    );
- 
-});
+      $(document).ready(function() {
+        $("#owl-example").owlCarousel();
+        $(document).foundation();
+      });
    </script>
-    <script>
-      $(document).foundation();
-    </script>
-  <script type="text/javascript">(function(){var ticker=document.createElement('script');ticker.type='text/javascript';ticker.async=true;ticker.src='//twitcker.com/ticker/LindseyMaratta.js?background=ff0303&tweet=ffffff&container=own-container&own-container=twitter-feed-marquee';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(ticker);})();</script>
   </body>
 </html>
