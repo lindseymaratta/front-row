@@ -184,6 +184,9 @@ a:hover {
 .masthead {
 	width: 100%;
 	margin: 0 0 25px 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	min-height: 300px;
 	height:20vh;
@@ -243,6 +246,9 @@ a:hover {
 .events-1 {
 	height: 275px;
 	background: url('../img/footballplayer.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
@@ -252,6 +258,9 @@ a:hover {
 
 	height: 275px;
 	background: url('../img/basketball.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 	position: relative;
 	overflow: hidden;
@@ -261,6 +270,9 @@ a:hover {
 
 		height: 275px;
 		background: url('../img/champagne.jpg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
 		background-size: cover;
 		position: relative;
 		overflow: hidden;
@@ -288,11 +300,17 @@ a:hover {
 	min-height: 600px;
 	height: 100vh;
 	background: url('../img/interior.jpg') bottom center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 }
 .fixed-background-2 {
 	min-height: 600px;
 	background: url('../img/pizza.jpg') bottom center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 }
 
@@ -334,7 +352,6 @@ a:hover {
 .fa {
 
 	text-align: center;
-	margin: 20px;
 	-webkit-transition: color .5s; /* For Safari 3.1 to 6.0 */
 -moz-tranisition: color .5s;
 -o-transition: color .5s;
@@ -359,7 +376,7 @@ a:hover {
 
 .social li{
 	color: #FF3A1D;
-	margin: 10px;
+	margin: 20px;
 	text-decoration: none;
 	list-style-type: none;
 	display: inline-block;
@@ -381,6 +398,8 @@ footer {
 	float: left;
 	padding-left: 5px;
 }
+
+
 
 .footer-list a:before {
 	content:"// ";
@@ -411,15 +430,22 @@ height: 2em;
 /*Media Queries
 =============================================================*/
 @media (max-width: 735px) {
-nav li{
-	font-size: 80%;
+		nav li{
+			font-size: 80%;
+
+		}
+		header nav {
+			padding: 0;
+			margin: 10px 0;
+			line-height: 1;
+		}
+
+		.social li {
+			margin: 0;
+			padding: 0;
 
 }
-header nav {
-	padding: 0;
-	margin: 10px 0;
-	line-height: 1;
-}
+
 }
 
 
