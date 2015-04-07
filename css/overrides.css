@@ -238,6 +238,7 @@ a:hover {
 =============================================================*/
 .events {
 	padding: 100px 0;
+	background: #ffffff;
 }
 
 
@@ -301,27 +302,39 @@ a:hover {
 
 /* Fixed Background 
 =============================================================*/
-	
+.fixed-background {
+	height:600px;
+	height: 100vh;
+}	
 .fixed-background-1 {
 	min-height: 600px;
-	height: 100%;
- 	width: 100%;
-	height: 100vh;
-	background: url('../img/interior.jpg') bottom center fixed;
-	-webkit-background-size: cover;
+	background: url('../img/interior_and_pizza.jpg') no-repeat top center;
+	/*-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-  background-repeat: no-repeat;
+	-o-background-size: 100%;
+	background-size: 100%;*/
+	background-size: 100%;
+	width: 100%;
+	height: 50%;
+	background-position: top;
+	position: fixed;
+	top: 0;
+	z-index: -2;
 }
+
 .fixed-background-2 {
 	min-height: 600px;
-	background: url('../img/pizza.jpg') bottom center fixed;
-	-webkit-background-size: cover;
+	width:100%;
+	background: url('../img/interior_and_pizza.jpg') no-repeat bottom center;
+	/*-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: cover;*/
+	background-position: bottom;
+	position: fixed;
+	bottom: 0;
+	z-index: -1;
+
 }
 
 
@@ -334,7 +347,9 @@ a:hover {
 
 .about-us {
 	padding: 100px 0;
+	background: #ffffff;
 }
+
 
 
 
@@ -343,6 +358,7 @@ a:hover {
 .subscribe {
 	text-align: center;
 	padding: 100px 0;
+	background: #ffffff;
 
 }
 
