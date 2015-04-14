@@ -468,6 +468,12 @@ height: 2em;
 }
 
 }
+@media (max-width: 800px) {
+	.fixed-background-1, .fixed-background-2 {
+		background-attachment: scroll;
+	}
+}
+/*
 @media (min-width: 1025px) {
 	.fixed-background-1, .fixed-background-2  {
 		height: 100vh;
@@ -486,6 +492,8 @@ height: 2em;
 	}
 
 }
+
+*/
 
 
 @media (max-width: 640px) {
