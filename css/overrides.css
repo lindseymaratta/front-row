@@ -318,7 +318,6 @@ a:hover {
 	height: 50%;
 	background-attachment: fixed;
 	top: 0;
-	z-index: -2;
 }
 
 .fixed-background-2 {
@@ -330,8 +329,6 @@ a:hover {
 	-o-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
-	bottom: 0;
-	z-index: -1;
 
 }
 
