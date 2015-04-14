@@ -14,13 +14,18 @@
 <!-- Default Theme -->
 <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
  
- <script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/modernizr.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/jquery.stellar.js"></script>
+  <script type="text/javascript">
+var myScroll = new IScroll('#IScroll');
+</script>
  
 <!-- Include js plugin -->
 
   </head>
-  <body>
+  <body onload="loaded()">
     <header>
       <div class="row">
         <div class="small-8 medium-4 columns logo">
@@ -133,7 +138,7 @@
 
   <!--first fixed background-->
 
-    <div class="fixed-background hide-for-small-only">
+    <div class="fixed-background hide-for-small-only" id="IScroll">
      <div class="fixed-background-1 hide-for-small-only">
      </div>
     </div>
@@ -159,7 +164,7 @@
     <!--End about us section-->
 
     <!--second fixed background-->
-    <div class="fixed-background hide-for-small-only">
+    <div class="fixed-background hide-for-small-only" id="IScroll">
       <div class="fixed-background-2 hide-for-small-only">
       </div>
     </div>
